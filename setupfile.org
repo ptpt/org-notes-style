@@ -7,4 +7,4 @@
 #+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
 
 # Add notes.css here
-#+HTML_HEAD: <link href="css/notes.css" rel="stylesheet" type="text/css" />
+#+HTML_HEAD: <link href="http://ptpt.github.io/org-notes-style/css/notes.css" rel="stylesheet" type="text/css" />
