@@ -1,8 +1,4 @@
 org-notes-style is a light CSS theme for Org mode. It provides a
 single stylesheet to style your exported HTML documents.
 
-To apply org-notes-style, add
-http://ptpt.github.io/org-notes-style/css/notes.css to your org
-documents.
-
-For more information http://ptpt.github.io/org-notes-style/
+For more information, check http://ptpt.github.io/org-notes-style/
