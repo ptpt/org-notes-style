@@ -1,4 +1,5 @@
-org-notes-style is a light CSS theme for Org mode. It provides a
-single stylesheet to style your exported HTML documents.
+org-notes-style is a light CSS theme for Org mode
+(http://orgmode.org/). It provides a single stylesheet to style your
+exported HTML documents.
 
 For more information, check http://ptpt.github.io/org-notes-style/
