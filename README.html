@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>org-notes-style</title>
+<!-- 2014-04-14 Mon 15:48 -->
+<meta  charset="utf-8">
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Tao Peng">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/notes.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="content">
+<h1 class="title">org-notes-style</h1>
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Introduction</a>
+<ul>
+<li><a href="#sec-1-1">Features</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">Installation</a>
+<ul>
+<li><a href="#sec-2-1">Requirements</a></li>
+<li><a href="#sec-2-2">Configuration</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">Development</a></li>
+</ul>
+</div>
+</nav>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<code>org-notes-style</code> is a light CSS theme for <a href="http://orgmode.org/">Org mode</a>. It provides a
+single stylesheet to style your exported HTML documents.
+</p>
+
+<p>
+Check <a href="http://ptpt.github.io/org-notes-style/">homepage</a> to see what it looks like.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Features</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Design for HTML5 and CSS3
+</li>
+<li>Pure CSS, no JavaScript
+</li>
+<li>Responsive web design
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Installation</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Requirements</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+It requires <code>org-mode</code> of version <code>8.2.5h</code> or above. To install the
+latest <code>org-mode</code> in Emacs 24, please refer to
+<a href="http://orgmode.org/elpa.html">http://orgmode.org/elpa.html</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Configuration</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Add following settings to your org documents.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-org-mode"># Turn off default internal styles
+#+OPTIONS: html-style:nil
+
+# Exporting to HTML5
+#+HTML_DOCTYPE: html5
+#+HTML_HEAD: &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+#+HTML_HEAD: &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+# Add notes.css here
+#+HTML_HEAD: &lt;link href="css/notes.css" rel="stylesheet" type="text/css" /&gt;
+</pre>
+</div>
+
+<p>
+Or, a better option, is to save all the settings in a single org
+file (let's say <code>~/org/notes-style.org</code>), and then include this
+file in your org documents:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-org-mode">#+SETUPFILE: ~/org/notes-style.org
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Development</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<code>org-notes-style</code> is develped using the <a href="http://compass-style.org/">Compass</a> framework based on
+<a href="http://sass-lang.com/">Sass</a>.
+</p>
+
+<p>
+Here is how to setup the development environment:
+</p>
+<pre class="example">
+$ git clone git@github.com:ptpt/org-notes-style.git
+$ cd org-notes-style
+$ compass watch
+</pre>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Tao Peng</p>
+<p class="date">Created: 2014-04-14 Mon 15:48</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.5h)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

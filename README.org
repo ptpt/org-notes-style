@@ -1,0 +1,47 @@
+#+TITLE: org-notes-style
+
+#+OPTIONS: toc:2 num:nil
+#+OPTIONS: html-scripts:nil
+#+SETUPFILE: setupfile.org
+
+
+* Introduction
+  =org-notes-style= is a light CSS theme for [[http://orgmode.org/][Org mode]]. It provides a
+  single stylesheet to style your exported HTML documents.
+
+  Check [[http://ptpt.github.io/org-notes-style/][homepage]] to see what it looks like.
+
+** Features
+   - Design for HTML5 and CSS3
+   - Pure CSS, no JavaScript
+   - Responsive web design
+
+* Installation
+
+** Requirements
+   It requires =org-mode= of version =8.2.5h= or above. To install the
+   latest =org-mode= in Emacs 24, please refer to
+   http://orgmode.org/elpa.html
+
+** Configuration
+   Add following settings to your org documents.
+   #+INCLUDE: setupfile.org src org-mode
+
+   Or, a better option, is to save all the settings in a single org
+   file (let's say =~/org/notes-style.org=), and then include this
+   file in your org documents:
+
+   #+BEGIN_SRC org-mode
+   #+SETUPFILE: ~/org/notes-style.org
+   #+END_SRC
+
+* Development
+  =org-notes-style= is develped using the [[http://compass-style.org/][Compass]] framework based on
+  [[http://sass-lang.com/][Sass]].
+
+  Here is how to setup the development environment:
+  #+BEGIN_EXAMPLE
+  $ git clone git@github.com:ptpt/org-notes-style.git
+  $ cd org-notes-style
+  $ compass watch
+  #+END_EXAMPLE
