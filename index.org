@@ -9,7 +9,8 @@
   *org-notes-style* is a light CSS theme for [[http://orgmode.org/][Org mode]]. It provides a
   single stylesheet to style your exported HTML documents.
 
-  Check [[http://ptpt.github.io/org-notes-style/][homepage]] to see what it looks like.
+  - Source: https://github.com/ptpt/org-notes-style
+  - Homepage: http://ptpt.github.io/org-notes-style/
 
 ** Features
    - Pure HTML5 and CSS3
