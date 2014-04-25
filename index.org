@@ -10,8 +10,8 @@
   single stylesheet to style your exported HTML documents. The outcome
   looks like this page you are viewing.
 
-  - Source: https://github.com/ptpt/org-notes-style
-  - Homepage: http://ptpt.github.io/org-notes-style/
+  - Source: [[https://github.com/ptpt/org-notes-style]]
+  - Homepage: [[http://ptpt.github.io/org-notes-style/]]
 
 ** Features
    - Pure HTML5 and CSS3
