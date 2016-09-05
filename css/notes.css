@@ -19,7 +19,7 @@ button,
 input,
 select,
 textarea {
-  color: #484c66;
+  color: #484C66;
 }
 
 html {
@@ -30,8 +30,8 @@ html {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -56,14 +56,14 @@ a:hover {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #ea4c89;
-  color: #fafafa;
+  background: #EA4C89;
+  color: #FAFAFA;
   text-shadow: none;
 }
 
 ::selection {
-  background: #ea4c89;
-  color: #fafafa;
+  background: #EA4C89;
+  color: #FAFAFA;
   text-shadow: none;
 }
 
@@ -74,7 +74,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px dashed #cccccc;
+  border-top: 1px dashed #CCC;
   margin: 1em 0;
   padding: 0;
 }
@@ -114,8 +114,8 @@ textarea {
 .tag {
   font-family: "Ubuntu Mono", Monaco, "Courier New", monospace;
   padding: 0 0.3em;
-  background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  background-color: #EEE;
+  border: 1px solid #CCC;
 }
 
 .todo {
@@ -190,11 +190,11 @@ pre.src {
 pre.src:before {
   display: none;
   position: absolute;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   top: 0.5em;
   right: 0.5em;
   padding: 4px;
-  border: 1px solid #cccccc;
+  border: 1px solid #CCC;
 }
 pre.src:hover:before {
   display: inline;
@@ -350,7 +350,7 @@ blockquote {
   margin: 0;
   padding: 0;
   padding-left: 3%;
-  border-left: 5px solid #ea4c89;
+  border-left: 5px solid #EA4C89;
 }
 
 body {
@@ -358,7 +358,7 @@ body {
   width: 92%;
   max-width: 1024px;
   margin: 0 auto;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 
 h2 {
@@ -368,7 +368,7 @@ h2 {
 .title {
   margin: 0 0 2em 0;
   line-height: 2em;
-  border-bottom: 5px solid #ea4c89;
+  border-bottom: 5px solid #EA4C89;
   text-align: center;
 }
 
@@ -385,25 +385,26 @@ h4,
 h5,
 h6 {
   color: #222;
-  text-shadow: 4px 4px 4px #eeeeee;
+  text-shadow: 4px 4px 4px #EEE;
 }
 
 .outline-2 {
   margin-bottom: 4em;
 }
 .outline-2 h2 {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #CCC;
 }
 .outline-2 a {
   font-family: "Ubuntu Mono", Monaco, "Courier New", monospace;
 }
 
 .outline-text-2 code, pre {
-  background-color: #eeeeee;
+  background-color: #EEE;
 }
 
 #table-of-contents {
   display: none;
+  margin-left: 0.5em;
 }
 
 #text-table-of-contents ul {
@@ -495,8 +496,7 @@ h6 {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p,
   h2,
   h3 {
@@ -530,13 +530,13 @@ h6 {
     width: 32%;
     min-width: 18em;
     float: right;
-    background-color: #eeeeee;
+    background-color: #EEE;
     position: relative;
     /* required by z-index */
     z-index: 5000;
-    border: 1px solid #cccccc;
-    -webkit-box-shadow: 4px 4px 4px #eeeeee;
-    -moz-box-shadow: 4px 4px 4px #eeeeee;
-    box-shadow: 4px 4px 4px #eeeeee;
+    border: 1px solid #CCC;
+    -moz-box-shadow: 4px 4px 4px #EEE;
+    -webkit-box-shadow: 4px 4px 4px #EEE;
+    box-shadow: 4px 4px 4px #EEE;
   }
 }
