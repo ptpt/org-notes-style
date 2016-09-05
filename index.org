@@ -11,7 +11,7 @@
   looks like this page you are viewing.
 
   - Source: [[https://github.com/ptpt/org-notes-style]]
-  - Homepage: [[http://ptpt.github.io/org-notes-style/]]
+  - Homepage: [[http://taopeng.me/org-notes-style/]]
 
 ** Features
    - Pure HTML5 and CSS3
