@@ -191,10 +191,9 @@ code {
 pre {
     font-size: 90%;
     padding: 8pt;
-    overflow: hidden;
+    overflow: auto;
     white-space: pre;
     word-wrap: normal;
-    &:hover { overflow: auto; }
 }
 
 pre.src {
@@ -208,7 +207,6 @@ pre.src {
         padding: 4px;
         border: 1px solid $border-color;
     }
-    &:hover:before { display: inline; }
 }
 
 pre.src-sh:before    { content: "Shell Script"; }
