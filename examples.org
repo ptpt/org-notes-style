@@ -138,6 +138,6 @@ Great clouds overhead
   | play   | study and work and play and party | work   | party    | work   |
 
 * Images
-  #+CAPTION: This is a tree taken by pt@flikr. Source: https://flic.kr/p/8JZ7Lq
+  #+CAPTION: This is a tree taken by Tao. Source: https://flic.kr/p/8JZ7Lq
   #+NAME:   fig:tree
   [[https://c1.staticflickr.com/5/4105/5080934352_5e8e76b7f4_b.jpg]]
