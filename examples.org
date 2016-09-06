@@ -1,0 +1,134 @@
+#+TITLE: Org Mode Examples
+
+#+SETUPFILE: setupfile.org
+# Don't do this :)
+# #+INCLUDE: "~/.emacs" src emacs-lisp
+
+* VERSE                                                             :orgmode:
+  VERSE is used to keep the line breaks in a reagin. This is a VERSE:
+  #+BEGIN_VERSE
+Great clouds overhead
+ Tiny black birds rise and fall
+  Snow covers Emacs
+
+  -- AlexSchroeder
+  #+END_VERSE
+  Notice: As you can see, the starting whitespaces counts.
+* This is a quote                                           :orgmode:example:
+  #+BEGIN_QUOTE
+  Everything should be made as simple as possible, but not any simpler
+  -- Albert Einstein
+  #+END_QUOTE
+
+  Just like a normal paragraph but it is quoted.
+
+** QUOTE Quoted level
+   This level is quoted
+
+* =EXAMPLE=
+  An EXAMPLE is used to include literal examples.
+
+  This is an EXAMPLE:
+  #+BEGIN_EXAMPLE
+  Some example from a text file.
+  #+END_EXAMPLE
+
+  You can also start the example lines with a *colon* followed by *a
+  space*:
+  : Some example started with a colon followed by a space.
+
+  If example is source code, you can use =BEGIN_SRC= block instead.
+
+* Source code
+  You can always use =M-x org-edit-src-code= to edit the code block in
+  another buffer.
+
+  Print =hello world= in C:
+  #+BEGIN_SRC c
+    #include <stdio.h>
+
+    int main(int argc, char *argv[])
+    {
+         printf("hello this world\n");
+         return 0;
+    }
+  #+END_SRC
+
+* Markups
+  - /This is italic/
+  - *This is bold*
+  - This is _underlined_
+  - This is a =variable=, ~verbatim~
+  - +this is deleted+
+
+  This is a horizontal line
+  -----
+
+* Drawers
+  :CLOCK:
+  This is a drawer
+  :END:
+
+* Footers
+  The Org homepage[fn:link:org mode homepage] now looks a lot better than
+  it used to.
+
+  [fn:link] don't tell others that the link is: http://orgmode.org
+
+* Links
+  This is a [[http://www.google.com][link]] do you like it?
+
+* COMMENT This is hidden comment
+  You can't see me
+
+* Math formula
+  The formula:
+
+  $$ f(x) = x^2 + 2 $$
+
+  where $x$ is some value and $f(x)$ returns the result.
+
+* TODO Buy a car
+  It's just an example :)
+
+* DONE Upload this file
+  CLOSED: [2014-05-29 Thu 11:49]
+   - [x] add more examples
+   - [ ] push to GitHub
+
+* Top level headline
+   The quick brown fox jumps over the lazy dog. Foxy parsons quiz and
+   cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex Trebek’s
+   fun TV quiz game. How razorback-jumping frogs can level six piqued
+   gymnasts! All questions asked by five watched experts — amaze the
+   judge.
+** Two stars
+    The quick brown fox jumps over the lazy dog. Foxy parsons quiz and
+    cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex Trebek’s
+    fun TV quiz game. How razorback-jumping frogs can level six piqued
+    gymnasts! All questions asked by five watched experts — amaze the
+    judge.
+*** Three stars
+     The quick brown fox jumps over the lazy dog. Foxy parsons quiz
+     and cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex
+     Trebek’s fun TV quiz game. How razorback-jumping frogs can level
+     six piqued gymnasts! All questions asked by five watched experts
+     — amaze the judge.
+**** Four stars
+      The quick brown fox jumps over the lazy dog. Foxy parsons quiz
+      and cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex
+      Trebek’s fun TV quiz game. How razorback-jumping frogs can level
+      six piqued gymnasts! All questions asked by five watched experts
+      — amaze the judge.
+***** Five stars
+       The quick brown fox jumps over the lazy dog. Foxy parsons quiz
+       and cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex
+       Trebek’s fun TV quiz game. How razorback-jumping frogs can
+       level six piqued gymnasts! All questions asked by five watched
+       experts — amaze the judge.
+* Table
+  The plan:
+  | Monday | Tuesday                           | Wesday | Thursday | Friday |
+  |--------+-----------------------------------+--------+----------+--------|
+  | work   | play                              | study  | work     | party  |
+  | play   | study and work and play and party | work   | party    | work   |

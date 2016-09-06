@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Org Mode Examples</title>
+<!-- 2016-09-06 二 11:33 -->
+<meta  charset="utf-8">
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Tao Peng">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="file:///home/pt/Dropbox/org/org-notes-style/css/notes.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Org Mode Examples</h1>
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. VERSE&#xa0;&#xa0;&#xa0;<span class="tag"><span class="orgmode">orgmode</span></span></a></li>
+<li><a href="#sec-2">2. This is a quote&#xa0;&#xa0;&#xa0;<span class="tag"><span class="orgmode">orgmode</span>&#xa0;<span class="example">example</span></span></a>
+<ul>
+<li><a href="#sec-2-1">2.1. Quoted level</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. <code>EXAMPLE</code></a></li>
+<li><a href="#sec-4">4. Source code</a></li>
+<li><a href="#sec-5">5. Markups</a></li>
+<li><a href="#sec-6">6. Drawers</a></li>
+<li><a href="#sec-7">7. Footers</a></li>
+<li><a href="#sec-8">8. Links</a></li>
+<li><a href="#sec-9">9. Math formula</a></li>
+<li><a href="#sec-10">10. <span class="todo TODO">TODO</span> Buy a car</a></li>
+<li><a href="#sec-11">11. <span class="done DONE">DONE</span> Upload this file</a></li>
+<li><a href="#sec-12">12. Top level headline</a>
+<ul>
+<li><a href="#sec-12-1">12.1. Two stars</a>
+<ul>
+<li><a href="#sec-12-1-1">12.1.1. Three stars</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-13">13. Table</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> VERSE&#xa0;&#xa0;&#xa0;<span class="tag"><span class="orgmode">orgmode</span></span></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+VERSE is used to keep the line breaks in a reagin. This is a VERSE:
+</p>
+<p class="verse">
+Great clouds overhead<br >
+&#xa0;Tiny black birds rise and fall<br >
+&#xa0;&#xa0;Snow covers Emacs<br >
+<br >
+&#xa0;&#xa0;&#x2013; AlexSchroeder<br >
+</p>
+<p>
+Notice: As you can see, the starting whitespaces counts.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> This is a quote&#xa0;&#xa0;&#xa0;<span class="tag"><span class="orgmode">orgmode</span>&#xa0;<span class="example">example</span></span></h2>
+<div class="outline-text-2" id="text-2">
+<blockquote>
+<p>
+Everything should be made as simple as possible, but not any simpler
+&#x2013; Albert Einstein
+</p>
+</blockquote>
+
+<p>
+Just like a normal paragraph but it is quoted.
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Quoted level</h3>
+<div class="outline-text-3" id="text-2-1">
+</div><pre>
+This level is quoted
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> <code>EXAMPLE</code></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+An EXAMPLE is used to include literal examples.
+</p>
+
+<p>
+This is an EXAMPLE:
+</p>
+<pre class="example">
+Some example from a text file.
+</pre>
+
+<p>
+You can also start the example lines with a <b>colon</b> followed by <b>a
+space</b>:
+</p>
+<pre class="example">
+Some example started with a colon followed by a space.
+</pre>
+
+<p>
+If example is source code, you can use <code>BEGIN_SRC</code> block instead.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Source code</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+You can always use <code>M-x org-edit-src-code</code> to edit the code block in
+another buffer.
+</p>
+
+<p>
+Print <code>hello world</code> in C:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-c">#include &lt;stdio.h&gt;
+
+int main(int argc, char *argv[])
+{
+     printf("hello this world\n");
+     return 0;
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Markups</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li><i>This is italic</i>
+</li>
+<li><b>This is bold</b>
+</li>
+<li>This is <span class="underline">underlined</span>
+</li>
+<li>This is a <code>variable</code>, <code>verbatim</code>
+</li>
+<li><del>this is deleted</del>
+</li>
+</ul>
+
+<p>
+This is a horizontal line
+</p>
+<hr >
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Drawers</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+This is a drawer
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Footers</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+The Org homepage<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup> now looks a lot better than
+it used to.
+</p>
+
+<p>
+<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> don&rsquo;t tell others that the link is: <a href="http://orgmode.org">http://orgmode.org</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Links</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+This is a <a href="http://www.google.com">link</a> do you like it?
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Math formula</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+The formula:
+</p>
+
+<p>
+$$ f(x) = x^2 + 2 $$
+</p>
+
+<p>
+where \(x\) is some value and \(f(x)\) returns the result.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> <span class="todo TODO">TODO</span> Buy a car</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+It&rsquo;s just an example :)
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> <span class="done DONE">DONE</span> Upload this file</h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li>add more examples
+</li>
+<li><code>[&#xa0;]</code> push to GitHub
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> Top level headline</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+The quick brown fox jumps over the lazy dog. Foxy parsons quiz and
+cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex Trebek’s
+fun TV quiz game. How razorback-jumping frogs can level six piqued
+gymnasts! All questions asked by five watched experts — amaze the
+judge.
+</p>
+</div>
+<div id="outline-container-sec-12-1" class="outline-3">
+<h3 id="sec-12-1"><span class="section-number-3">12.1</span> Two stars</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+The quick brown fox jumps over the lazy dog. Foxy parsons quiz and
+cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex Trebek’s
+fun TV quiz game. How razorback-jumping frogs can level six piqued
+gymnasts! All questions asked by five watched experts — amaze the
+judge.
+</p>
+</div>
+<div id="outline-container-sec-12-1-1" class="outline-4">
+<h4 id="sec-12-1-1"><span class="section-number-4">12.1.1</span> Three stars</h4>
+<div class="outline-text-4" id="text-12-1-1">
+<p>
+The quick brown fox jumps over the lazy dog. Foxy parsons quiz
+and cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex
+Trebek’s fun TV quiz game. How razorback-jumping frogs can level
+six piqued gymnasts! All questions asked by five watched experts
+— amaze the judge.
+</p>
+</div>
+<ol class="org-ol"><li><a id="sec-12-1-1-1" name="sec-12-1-1-1"></a>Four stars<br ><div class="outline-text-5" id="text-12-1-1-1">
+<p>
+The quick brown fox jumps over the lazy dog. Foxy parsons quiz
+and cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex
+Trebek’s fun TV quiz game. How razorback-jumping frogs can level
+six piqued gymnasts! All questions asked by five watched experts
+— amaze the judge.
+</p>
+</div>
+<ol class="org-ol"><li><a id="sec-12-1-1-1-1" name="sec-12-1-1-1-1"></a>Five stars<br ><div class="outline-text-6" id="text-12-1-1-1-1">
+<p>
+The quick brown fox jumps over the lazy dog. Foxy parsons quiz
+and cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex
+Trebek’s fun TV quiz game. How razorback-jumping frogs can
+level six piqued gymnasts! All questions asked by five watched
+experts — amaze the judge.
+</p>
+</div>
+</li></ol>
+</li></ol>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> Table</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+The plan:
+</p>
+<table>
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+
+<col  class="left">
+
+<col  class="left">
+
+<col  class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Monday</th>
+<th scope="col" class="left">Tuesday</th>
+<th scope="col" class="left">Wesday</th>
+<th scope="col" class="left">Thursday</th>
+<th scope="col" class="left">Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">work</td>
+<td class="left">play</td>
+<td class="left">study</td>
+<td class="left">work</td>
+<td class="left">party</td>
+</tr>
+
+<tr>
+<td class="left">play</td>
+<td class="left">study and work and play and party</td>
+<td class="left">work</td>
+<td class="left">party</td>
+<td class="left">work</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>org mode homepage</p></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Tao Peng</p>
+<p class="date">Created: 2016-09-06 二 11:33</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
