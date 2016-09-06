@@ -130,6 +130,8 @@ Great clouds overhead
        level six piqued gymnasts! All questions asked by five watched
        experts — amaze the judge.
 * Table
+  <<sec:table>>
+
   #+CAPTION: This is the plan for next weekdays
   #+NAME:   tab:plan
   | Monday | Tuesday                           | Wesday | Thursday | Friday |
@@ -137,7 +139,18 @@ Great clouds overhead
   | work   | play                              | study  | work     | party  |
   | play   | study and work and play and party | work   | party    | work   |
 
-* Images
+* Image
+  <<sec:image>>
+
   #+CAPTION: This is a tree taken by Tao. Source: https://flic.kr/p/8JZ7Lq
   #+NAME:   fig:tree
   [[https://c1.staticflickr.com/5/4105/5080934352_5e8e76b7f4_b.jpg]]
+
+* Internal links
+  - one item
+  - <<target>>another item
+
+    Here we refer to item [[target]].
+
+    Please check the table [[tab:plan]] at section [[sec:table]], and image
+    [[fig:tree]] at section [[sec:image]].
