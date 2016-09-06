@@ -1,6 +1,6 @@
 #+TITLE: Org Mode Examples
 
-#+SETUPFILE: setupfile.org
+#+SETUPFILE: setupfile.local.org
 # Don't do this :)
 # #+INCLUDE: "~/.emacs" src emacs-lisp
 
@@ -116,11 +116,11 @@ Great clouds overhead
    - [ ] push to GitHub
 
 * Top level headline
-   The quick brown fox jumps over the lazy dog. Foxy parsons quiz and
-   cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex Trebek’s
-   fun TV quiz game. How razorback-jumping frogs can level six piqued
-   gymnasts! All questions asked by five watched experts — amaze the
-   judge.
+  The quick brown fox jumps over the lazy dog. Foxy parsons quiz and
+  cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex Trebek’s
+  fun TV quiz game. How razorback-jumping frogs can level six piqued
+  gymnasts! All questions asked by five watched experts — amaze the
+  judge.
 ** Two stars
     The quick brown fox jumps over the lazy dog. Foxy parsons quiz and
     cajole the lovably dim wiki-girl. Watch “Jeopardy!”, Alex Trebek’s
@@ -150,16 +150,16 @@ Great clouds overhead
 
   #+CAPTION: This is the plan for next weekdays
   #+NAME:   tab:plan
-  | Monday | Tuesday                           | Wesday | Thursday | Friday |
-  |--------+-----------------------------------+--------+----------+--------|
-  | work   | play                              | study  | work     | party  |
-  | play   | study and work and play and party | work   | party    | work   |
+  | Monday | Tuesday                           | Wesday | Thursday | Friday | This is a long weekend                                            |
+  |--------+-----------------------------------+--------+----------+--------+-------------------------------------------------------------------|
+  | work   | play                              | study  | work     | party  | I have nothing to do                                              |
+  | play   | study and work and play and party | work   | party    | work   | I sing and dance and the quick brown fox jumps over the lazy dog. |
 
 * Image
   <<sec:image>>
 
   #+CAPTION: This is a tree taken by Tao. Source: https://flic.kr/p/8JZ7Lq
-  #+NAME:   fig:tree
+  #+NAME: fig:tree
   [[https://c1.staticflickr.com/5/4105/5080934352_5e8e76b7f4_b.jpg]]
 
 * Internal links
@@ -170,3 +170,9 @@ Great clouds overhead
 
     Please check the table [[tab:plan]] at section [[sec:table]], and image
     [[fig:tree]] at section [[sec:image]].
+
+* Special symbols
+  The mass of the sun is M_sun = 1.989 x 10^30 kg.  The radius of the
+  sun is R_{sun} = 6.96 x 10^8 m.
+
+  Angles are written as Greek letters \alpha, \beta and \gamma.
