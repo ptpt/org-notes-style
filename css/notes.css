@@ -57,13 +57,13 @@ a:hover {
  */
 ::-moz-selection {
   background: #EA4C89;
-  color: #FAFAFA;
+  color: #FFF;
   text-shadow: none;
 }
 
 ::selection {
   background: #EA4C89;
-  color: #FAFAFA;
+  color: #FFF;
   text-shadow: none;
 }
 
@@ -187,7 +187,7 @@ pre.src {
 pre.src:before {
   display: none;
   position: absolute;
-  background-color: #FAFAFA;
+  background-color: #FFF;
   top: 0.5em;
   right: 0.5em;
   padding: 4px;
@@ -355,7 +355,7 @@ body {
   width: 92%;
   max-width: 1024px;
   margin: 0 auto;
-  background-color: #FAFAFA;
+  background-color: #FFF;
 }
 
 h2 {

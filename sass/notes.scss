@@ -10,10 +10,8 @@
 @import "compass";
 
 $border-color: #CCC;
-$sexy-color: #EA4C89;
-$box-shadow-color: #EEE;
-$text-shadow-color: $box-shadow-color;
-$main-background-color: #FAFAFA;
+$awesome-color: #EA4C89;
+$main-background-color: #FFF;
 $main-color: #484C66;
 $secondary-background-color: #EEE;
 $main-font-family: Palatino, Georgia, serif;
@@ -66,13 +64,13 @@ a {
  */
 
 ::-moz-selection {
-    background: $sexy-color;
+    background: $awesome-color;
     color: $main-background-color;
     text-shadow: none;
 }
 
 ::selection {
-    background: $sexy-color;
+    background: $awesome-color;
     color: $main-background-color;
     text-shadow: none;
 }
@@ -275,7 +273,7 @@ blockquote {
     margin: 0;
     padding: 0;
     padding-left: 3%;
-    border-left: 5px solid $sexy-color;
+    border-left: 5px solid $awesome-color;
 }
 
 body {
@@ -291,7 +289,7 @@ h2 { line-height: 1.62em; }
 .title {
     margin: 0 0 2em 0;
     line-height: 2em;
-    border-bottom: 5px solid $sexy-color;
+    border-bottom: 5px solid $awesome-color;
     text-align: center;
 }
 
@@ -308,7 +306,6 @@ h4,
 h5,
 h6 {
     color: #222;
-    @include text-shadow(4px 4px 4px $text-shadow-color);
 }
 
 .outline-2 {
