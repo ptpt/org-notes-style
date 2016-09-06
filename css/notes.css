@@ -284,6 +284,18 @@ dt {
   font-weight: bold;
 }
 
+#footnotes {
+  border-top: 5px solid #EA4C89;
+  margin-bottom: 5em;
+}
+#footnotes h2 {
+  display: none;
+}
+
+#text-footnotes {
+  margin-top: 1em;
+}
+
 .footpara:nth-child(2) {
   display: inline;
 }

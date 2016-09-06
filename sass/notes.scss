@@ -240,6 +240,19 @@ td.right  { text-align: right;  }
 td.left   { text-align: left;   }
 td.center { text-align: center; }
 dt { font-weight: bold; }
+
+#footnotes {
+    h2 {
+        display:none;
+    }
+    border-top: 5px solid $awesome-color;
+    margin-bottom: 5em;
+}
+
+#text-footnotes {
+    margin-top: 1em;
+}
+
 .footpara:nth-child(2) { display: inline; }
 .footpara { display: block; }
 .footdef  {
