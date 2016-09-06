@@ -299,19 +299,13 @@ dt {
   content: "]";
 }
 .footdef p {
-  display: inline-block;
+  display: inline;
   margin: 0.2em;
 }
 
-.figure {
-  padding: 1em;
+figure {
+  margin: 0;
 }
-
-.figure p {
-  text-align: center;
-}
-
-.figure img,
 figure img {
   max-width: 100%;
 }

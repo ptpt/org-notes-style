@@ -250,19 +250,16 @@ dt { font-weight: bold; }
         content:"]";
     }
     p {
-        display: inline-block;
+        display: inline;
         margin: 0.2em;
     }
 }
 
-.figure { padding: 1em; }
-.figure p { text-align: center; }
-
-.figure,
 figure {
     img {
         max-width: 100%;
     }
+    margin: 0;
 }
 
 .inlinetask {
