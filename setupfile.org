@@ -1,5 +1,5 @@
 # Turn off default internal styles
-#+OPTIONS: html-style:nil
+#+OPTIONS: html-style:nil html5-fancy:t
 
 # Exporting to HTML5
 #+HTML_DOCTYPE: html5
