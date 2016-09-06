@@ -236,7 +236,8 @@ pre.src-html:before {
 
 table {
   border-collapse: collapse;
-  border: 1px solid #484C66;
+  display: block;
+  overflow-x: auto;
 }
 
 caption.t-above {
@@ -291,6 +292,10 @@ dt {
 
 .footdef {
   margin-bottom: 1em;
+}
+
+figure img {
+  max-width: 100%;
 }
 
 .figure {
@@ -382,7 +387,6 @@ h4,
 h5,
 h6 {
   color: #222;
-  text-shadow: 4px 4px 4px #EEE;
 }
 
 .outline-2 {
@@ -532,8 +536,5 @@ h6 {
     /* required by z-index */
     z-index: 5000;
     border: 1px solid #CCC;
-    -moz-box-shadow: 4px 4px 4px #EEE;
-    -webkit-box-shadow: 4px 4px 4px #EEE;
-    box-shadow: 4px 4px 4px #EEE;
   }
 }

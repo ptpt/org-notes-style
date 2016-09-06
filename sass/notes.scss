@@ -220,7 +220,8 @@ pre.src-html:before  { content: "HTML"; }
 
 table {
     border-collapse:collapse;
-    border: 1px solid $main-color;
+    display: block;
+    overflow-x: auto;
 }
 
 caption.t-above { caption-side: top; }
@@ -240,6 +241,13 @@ dt { font-weight: bold; }
 .footpara:nth-child(2) { display: inline; }
 .footpara { display: block; }
 .footdef  { margin-bottom: 1em; }
+
+figure {
+    img {
+        max-width: 100%;
+    }
+}
+
 .figure { padding: 1em; }
 .figure p { text-align: center; }
 .inlinetask {
@@ -455,6 +463,5 @@ h6 {
         position: relative;         /* required by z-index */
         z-index: 5000;
         border: 1px solid $border-color;
-        @include box-shadow(4px 4px 4px $box-shadow-color);
     }
 }
