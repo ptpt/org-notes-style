@@ -72,14 +72,30 @@ Great clouds overhead
   This is a drawer
   :END:
 
-* Footers
-  The Org homepage[fn:link:org mode homepage] now looks a lot better than
+* Footnots
+  The Org homepage[fn:orglink: org mode homepage] now looks a lot better than
   it used to.
 
-  [fn:link] don't tell others that the link is: http://orgmode.org
+  Inline definition [fn:: This is the inline definition of this footnote].
+
+  Org homepage again [fn:orglink]. Don't tell others that the link is: http://orgmode.org
+
+  An issue about the footnote [fn:issue: The definition is wrapped in a paragraph (=<p>=) hence a new line].
 
 * Links
   This is a [[http://www.google.com][link]] do you like it?
+
+* Lists
+  + plus
+  + second plus
+    * star
+    * second star
+      1. number
+      2. second number
+         1) number again
+         2) second number again
+    * third star
+  + third plus
 
 * COMMENT This is hidden comment
   You can't see me
