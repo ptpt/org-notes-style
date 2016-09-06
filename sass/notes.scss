@@ -220,10 +220,18 @@ pre.src-c:before     { content: "C"; }
 pre.src-cpp:before   { content: "C++"; }
 pre.src-html:before  { content: "HTML"; }
 
-table { border-collapse:collapse; }
+table {
+    border-collapse:collapse;
+    border: 1px solid $main-color;
+}
+
 caption.t-above { caption-side: top; }
 caption.t-bottom { caption-side: bottom; }
-td, th { vertical-align:top;  }
+td, th {
+    vertical-align:top;
+    border: 1px solid $main-color;
+    padding: 0.5em;
+}
 th.right  { text-align: center;  }
 th.left   { text-align: center;   }
 th.center { text-align: center; }
