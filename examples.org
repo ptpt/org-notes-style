@@ -4,6 +4,9 @@
 # Don't do this :)
 # #+INCLUDE: "~/.emacs" src emacs-lisp
 
+* Introduction
+  This page shows some examples. The org source document is [[https://raw.githubusercontent.com/ptpt/org-notes-style/master/examples.org][here]].
+
 * VERSE                                                             :orgmode:
   VERSE is used to keep the line breaks in a reagin. This is a VERSE:
   #+BEGIN_VERSE
@@ -127,8 +130,14 @@ Great clouds overhead
        level six piqued gymnasts! All questions asked by five watched
        experts — amaze the judge.
 * Table
-  The plan:
+  #+CAPTION: This is the plan for next weekdays
+  #+NAME:   tab:plan
   | Monday | Tuesday                           | Wesday | Thursday | Friday |
   |--------+-----------------------------------+--------+----------+--------|
   | work   | play                              | study  | work     | party  |
   | play   | study and work and play and party | work   | party    | work   |
+
+* Images
+  #+CAPTION: This is a tree taken by pt@flikr. Source: https://flic.kr/p/8JZ7Lq
+  #+NAME:   fig:tree
+  [[https://c1.staticflickr.com/5/4105/5080934352_5e8e76b7f4_b.jpg]]

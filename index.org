@@ -4,14 +4,11 @@
 #+OPTIONS: html-scripts:nil
 #+SETUPFILE: setupfile.org
 
-
 * Introduction
-  *org-notes-style* is a light CSS theme for [[http://orgmode.org/][Org mode]]. It provides a
-  single stylesheet to style your exported HTML documents.
+  =org-notes-style= is a light CSS theme for [[http://orgmode.org/][Org mode]]. It provides a
+  stylesheet to style your exported HTML documents.
 
-  - More examples: http://taopeng.me/org-notes-style/examples.html
-  - Source: [[https://github.com/ptpt/org-notes-style]]
-  - Homepage: [[http://taopeng.me/org-notes-style/]]
+  This HTML page is styled with =org-notes-style= from its [[https://raw.githubusercontent.com/ptpt/org-notes-style/master/index.org][org source file]]. Check more examples at [[http://taopeng.me/org-notes-style/examples.html][here]].
 
 ** Features
    - Pure HTML5 and CSS3
