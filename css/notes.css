@@ -171,6 +171,8 @@ textarea {
 pre,
 code {
   font-family: "Ubuntu Mono", Monaco, "Courier New", monospace;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 pre {
@@ -250,7 +252,7 @@ caption.t-bottom {
 
 td, th {
   vertical-align: top;
-  border: 1px solid #484C66;
+  border: 1px solid #CCC;
   padding: 0.5em;
 }
 
@@ -290,12 +292,15 @@ dt {
   display: block;
 }
 
-.footdef {
-  margin-bottom: 1em;
+.footdef sup:before {
+  content: "[";
 }
-
-figure img {
-  max-width: 100%;
+.footdef sup:after {
+  content: "]";
+}
+.footdef p {
+  display: inline-block;
+  margin: 0.2em;
 }
 
 .figure {
@@ -304,6 +309,11 @@ figure img {
 
 .figure p {
   text-align: center;
+}
+
+.figure img,
+figure img {
+  max-width: 100%;
 }
 
 .inlinetask {

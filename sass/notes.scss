@@ -184,6 +184,8 @@ textarea {
 pre,
 code {
     font-family: $monospace-font-family;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
 }
 
 pre {
@@ -228,7 +230,7 @@ caption.t-above { caption-side: top; }
 caption.t-bottom { caption-side: bottom; }
 td, th {
     vertical-align:top;
-    border: 1px solid $main-color;
+    border: 1px solid $border-color;
     padding: 0.5em;
 }
 th.right  { text-align: center;  }
@@ -240,16 +242,29 @@ td.center { text-align: center; }
 dt { font-weight: bold; }
 .footpara:nth-child(2) { display: inline; }
 .footpara { display: block; }
-.footdef  { margin-bottom: 1em; }
+.footdef  {
+    sup:before {
+        content:"[";
+    }
+    sup:after {
+        content:"]";
+    }
+    p {
+        display: inline-block;
+        margin: 0.2em;
+    }
+}
 
+.figure { padding: 1em; }
+.figure p { text-align: center; }
+
+.figure,
 figure {
     img {
         max-width: 100%;
     }
 }
 
-.figure { padding: 1em; }
-.figure p { text-align: center; }
 .inlinetask {
     padding: 10px;
     border: 2px solid gray;
