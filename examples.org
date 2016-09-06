@@ -1,6 +1,6 @@
 #+TITLE: Org Mode Examples
 
-#+SETUPFILE: setupfile.local.org
+#+SETUPFILE: setupfile.org
 # Don't do this :)
 # #+INCLUDE: "~/.emacs" src emacs-lisp
 
