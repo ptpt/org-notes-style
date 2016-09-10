@@ -9,13 +9,17 @@
 
 @import "compass";
 
+@import 'https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:700,700i|Source+Serif+Pro:400,700';
+
+$main-color: #484C66;
+$main-background-color: #FFF;
+$secondary-background-color: #EEE;
 $border-color: #CCC;
 $awesome-color: #EA4C89;
-$main-background-color: #FFF;
-$main-color: #484C66;
-$secondary-background-color: #EEE;
-$main-font-family: Palatino, Georgia, serif;
-$monospace-font-family: "Ubuntu Mono", Monaco, "Courier New", monospace;
+$main-font-family: "Source Serif Pro", Palatino, Georgia, serif;
+$header-font-family: "Source Sans Pro", sans-serif;
+$monospace-font-family: "Source Pro", Monaco, "Courier New", monospace;
+
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
@@ -39,7 +43,7 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 90%;
     line-height: 1.4;
 }
 
@@ -53,7 +57,7 @@ a {
     @include force-wrap;
     text-decoration: none;
     &:hover {
-        text-decoration: underline;
+        color: $awesome-color;
     }
 }
 
@@ -143,6 +147,7 @@ textarea {
     font-size: 80%;
     font-weight: normal;
     margin: 0 0.3em;
+    display: none;
 }
 
 .timestamp {
@@ -256,16 +261,9 @@ dt { font-weight: bold; }
 .footpara:nth-child(2) { display: inline; }
 .footpara { display: block; }
 .footdef  {
-    sup:before {
-        content:"[";
-    }
-    sup:after {
-        content:"]";
-    }
-    p {
-        display: inline;
-        margin: 0.2em;
-    }
+    sup:before { content:"["; }
+    sup:after { content:"]"; }
+    p { display: inline; }
 }
 
 figure {
@@ -273,6 +271,11 @@ figure {
         max-width: 100%;
     }
     margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .inlinetask {
@@ -310,7 +313,7 @@ blockquote {
 }
 
 body {
-    font: 1em/1.5em $main-font-family;
+    font-family: $main-font-family;
     width: 92%;
     max-width: 1024px;
     margin: 0 auto;
@@ -332,25 +335,21 @@ h2 { line-height: 1.62em; }
     text-align: right;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
     color: #222;
 }
 
 .outline-2 {
     margin-bottom: 4em;
     h2 { border-bottom: 1px solid $border-color; }
-    a { font-family: $monospace-font-family; }
 }
 
 .outline-text-2 code, pre {
     background-color: $secondary-background-color;
 }
 
+// Hide ToC for small screens
 #table-of-contents {
     display: none;
     margin-left: 0.5em;
@@ -462,10 +461,6 @@ h6 {
         page-break-after: avoid;
     }
 
-    .tag {
-        display: none;
-    }
-
     #table-of-contents {
         display: block;
         width: initial;
@@ -478,6 +473,10 @@ h6 {
 
 /* large screen */
 @media screen and (min-width: 40rem) {
+    html {
+        font-size: 100%;
+    }
+
     #table-of-contents {
         display: block;
         padding: 1em;
@@ -488,5 +487,9 @@ h6 {
         position: relative;         /* required by z-index */
         z-index: 5000;
         border: 1px solid $border-color;
+    }
+
+    .tag {
+        display: initial;
     }
 }
