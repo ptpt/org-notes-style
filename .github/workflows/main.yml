@@ -43,6 +43,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Compile org mode files
-        run: pwd && emacs -Q --script compile-org-files.el
+        run: emacs --script compile-org-files.el
 
 
