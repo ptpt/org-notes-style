@@ -26,7 +26,8 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: purcell/setup-emacs@bea3d9e95785b8412caf802b320cd6de386be7a3
         uses: purcell/setup-emacs@v3.0
-
+        with:
+          version: 26.3
 
       # Runs a single command using the runners shell
       - name: Show Emacs version
