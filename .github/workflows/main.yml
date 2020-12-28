@@ -35,11 +35,10 @@ jobs:
         with:
           version: ${{ matrix.emacs_version }}
 
-      # Runs a single command using the runners shell
-      - name: Show Emacs version
-        run: emacs --version
-
       - name: Export to HTML files
-        run: emacs -Q --script export.el examples.org index.org
+        run: |
+            emacs --version
+            ls
+            emacs -Q --script export.el examples.org index.org
 
 
