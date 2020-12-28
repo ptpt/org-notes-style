@@ -2,6 +2,7 @@
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
+(message "package initialized")
 
 (package-install 'htmlize)
 (message "htmlize installed")
