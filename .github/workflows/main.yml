@@ -39,10 +39,7 @@ jobs:
       - name: Show Emacs version
         run: emacs --version
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      - name: Compile org mode files
-        run: emacs -Q --script compile-org-files.el
+      - name: Export to HTML files
+        run: emacs -Q --script export.el examples.org index.org
 
 
