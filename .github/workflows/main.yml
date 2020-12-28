@@ -38,7 +38,8 @@ jobs:
       - name: Export to HTML files
         run: |
             emacs --version
-            ls
+            ls -a -l
+            pwd
             emacs -Q --script export.el examples.org index.org
 
 
