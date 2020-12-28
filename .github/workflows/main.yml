@@ -35,11 +35,12 @@ jobs:
         with:
           version: ${{ matrix.emacs_version }}
 
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
       - name: Export to HTML files
         run: |
             emacs --version
-            ls -a -l
-            pwd
             emacs -Q --script export.el examples.org index.org
 
 
