@@ -4,6 +4,10 @@
 (package-initialize)
 (message "package initialized")
 
+(unless package-archive-contents
+  (package-refresh-contents)
+  (message "package refreshed"))
+
 (package-install 'htmlize)
 (message "htmlize installed")
 
